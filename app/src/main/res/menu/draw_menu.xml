@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/user"
+        android:title="@string/user">
+        <menu>
+
+            <item
+                android:id="@+id/MainPage"
+                android:icon="@drawable/ic_mainpage"
+                android:title="@string/main_page" />
+
+            <item
+                android:id="@+id/user_information_button"
+                android:icon="@drawable/ic_user_infomation_draw"
+                android:title="@string/user_information"
+                android:enabled="true" />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/Calculate"
+        android:title="@string/calculate">
+        <menu>
+
+            <item
+                android:id="@+id/human_height_and_weight"
+                android:icon="@drawable/ic_human_height_and_weight"
+                android:title="@string/calculate_weight_and_height" />
+
+        </menu>
+    </item>
+
+    <item android:title="@string/food_and_drink">
+        <menu>
+
+            <item
+                android:id="@+id/Food_and_Drink"
+                android:icon="@drawable/ic_food_and_drink"
+                android:title="@string/about_foot_and_drink" />
+            <item
+                android:id="@+id/Gps"
+                android:icon="@drawable/ic_find_restaurant"
+                android:title="@string/find_a_restaurant" />
+
+        </menu>
+    </item>
+    <item
+        android:id="@+id/Help"
+        android:icon="@drawable/ic_help"
+        android:title="@string/help" />
+
+    <item
+        android:id="@+id/log_out"
+        android:icon="@drawable/ic_sign_out"
+        android:title="@string/sign_out" />
+
+</menu>
+

@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginActivity"
+    android:background="#0DC3E3"
+    >
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        app:srcCompat="@drawable/logo_login"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="25dp"
+
+        />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="330dp"
+        android:gravity="center"
+        android:hint="Username"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+
+        />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginLeft="55dp"
+        android:layout_marginTop="380dp" />
+
+
+    <Button
+        android:id="@+id/Singin_button"
+        android:layout_width="343dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="450dp"
+        android:backgroundTint="#0B61F6"
+        android:text="Log ın"
+        />
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="500dp"
+        android:buttonTint="@color/black"
+        android:text="Remember me" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="19dp"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="570dp"
+        android:text="Don't have an account?" />
+    <Button
+        android:id="@+id/SignUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="560dp"
+        android:backgroundTint="#0DC3E3"
+        android:text="Sign Up"
+
+
+        />
+
+    <ImageView
+        android:id="@+id/Username_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="340dp"
+        app:srcCompat="@drawable/username_icon" />
+
+    <ImageView
+        android:id="@+id/password_icon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="390dp"
+        app:srcCompat="@drawable/share_icon2" />
+
+
+</RelativeLayout>

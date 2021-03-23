@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:background="@color/teal_200">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create your account"
+        android:textSize="35dp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="35dp"
+
+        />
+
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="110dp"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:hint=" Name"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:maxLines="1"
+        />
+    <EditText
+        android:id="@+id/Surname"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="110dp"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:hint=" Surname"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:maxLines="1"
+        />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:hint="Username"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:maxLines="1"
+        android:inputType="text"
+        />
+    <EditText
+        android:id="@+id/Email"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="250dp"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+        android:hint="E-mail"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:maxLines="1"
+        />
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="320dp"
+        android:gravity="center"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="280dp"
+        android:layout_height="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="390dp"
+        android:gravity="center"
+        android:hint="Date"
+        android:maxLines="1"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="329dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="460dp"
+        android:gravity="center"
+        android:hint="phone number"
+        android:inputType="phone"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:maxLines="1"
+        />
+    <RadioGroup
+        android:orientation="horizontal"
+        android:id="@+id/gender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="530dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gender:"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            />
+
+        <RadioButton
+            android:id="@+id/MaleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male"
+            android:textSize="18dp"
+            android:buttonTint="@color/black"
+            />
+
+        <RadioButton
+            android:id="@+id/FemaleRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"
+            android:text="Female"
+            android:textSize="18dp" />
+        <RadioButton
+            android:id="@+id/UncertainRadio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/black"
+            android:text="Uncertain"
+            android:textSize="18dp" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="65dp"
+        android:layout_marginTop="600dp"
+        android:buttonTint="@color/white"
+        >
+        <Button
+            android:id="@+id/Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:backgroundTint="#0B61F6"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_marginLeft="20dp"
+            android:textSize="20dp"
+            android:backgroundTint="#CA0505"
+            android:buttonTint="@color/black" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/Calender"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="300dp"
+        android:layout_marginTop="390dp"
+        android:background="#00DDC3"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+</RelativeLayout>
+

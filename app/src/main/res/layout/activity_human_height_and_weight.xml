@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0DC3E3"
+    tools:context=".human_height_and_weight">
+
+    <androidx.drawerlayout.widget.DrawerLayout
+
+        android:id="@+id/drawer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="#0DC3E3">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="115dp"
+                android:text="Calculate Ideal Height / Weight"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="215dp"
+                android:text="Height"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="315dp"
+                android:text="Weight"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/boy_degeri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="366dp"
+                android:layout_marginTop="205dp"
+                android:digits="0123456789"
+                android:hint="0"
+                android:maxLength="3"
+                android:textSize="25dp" />
+
+
+            <EditText
+                android:id="@+id/Kilo_degeri"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="366dp"
+                android:layout_marginTop="305dp"
+                android:digits="0123456789"
+                android:hint="0"
+                android:maxLength="3"
+                android:textSize="25dp" />
+
+            <SeekBar
+                android:id="@+id/BoyseekBar"
+                android:layout_width="184dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="220dp"
+                android:scrollbarSize="35dp"
+                android:thumbTint="#F80000" />
+
+            <SeekBar
+                android:id="@+id/kiloseekBar"
+                android:layout_width="184dp"
+                android:layout_height="28dp"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="320dp"
+                android:scrollbarSize="35dp"
+                android:thumbTint="#FF0000"
+                android:max="300"/>
+
+            <RadioGroup
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="420dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gender:"
+                    android:textColor="@color/white"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/MaleRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:checked="true"
+                    android:text="Male"
+                    android:textSize="18dp" />
+
+                <RadioButton
+                    android:id="@+id/FemaleRadio"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/black"
+                    android:text="Female"
+                    android:textSize="18dp" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="515dp"
+                android:text="Ideal Weight:"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/ResultText"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="515dp"
+                android:background="#FFFFFF"
+                android:hint="Ideal Weight"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="100dp"
+                android:layout_marginTop="575dp"
+                android:text="Status:"
+                android:textColor="@color/white"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/StatusText"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="180dp"
+                android:layout_marginTop="575dp"
+                android:background="#FFFFFF"
+                android:hint="Status"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+            
+        </RelativeLayout>
+
+        <include
+            layout="@layout/drawer_toolbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <include
+            layout="@layout/contein_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <com.google.android.material.navigation.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="start"
+            android:background="#0DC3E3"
+            android:fitsSystemWindows="true"
+            app:headerLayout="@layout/draw_header"
+            app:menu="@menu/draw_menu" />
+
+
+    </androidx.drawerlayout.widget.DrawerLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">HealtyLife</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="find_a_restaurant">Find a Restaurant</string>
+    <string name="user_information">User information</string>
+    <string name="main_page">Main Page</string>
+    <string name="calculate_weight_and_height">Calculate Weight and Height</string>
+    <string name="food_and_drink">Food and Drink</string>
+    <string name="about_foot_and_drink">About Foot and Drink</string>
+    <string name="help">Help</string>
+    <string name="sign_out">Sign out</string>
+    <string name="user">User</string>
+    <string name="calculate">Calculate</string>
+    <string name="google_map_key">AIzaSyB_qsP8AOP_P0MdlPz-48TDaJYjTP3vbjo</string>
+</resources>
